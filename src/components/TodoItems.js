@@ -7,6 +7,7 @@ import { MdDelete, MdEdit } from "react-icons/md";
 import { deleteTodo } from "../slices/todoSlice";
 import { toast } from "react-hot-toast";
 import TodoModal from "./TodoModal";
+import CheckButton from "./CheckButton";
 
 function TodoItems({ todo }) {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ function TodoItems({ todo }) {
     <>
       <div className={styles.item}>
         <div className={styles.todoDetails}>
-          [ ]
+          <CheckButton/>
           <div className={styles.texts}>
             <p
               className={getClasses([

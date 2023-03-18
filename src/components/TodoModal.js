@@ -53,8 +53,6 @@ function TodoModal({type, modalOpen, setModalOpen, todo }) {
         }
       }
       setModalOpen(false)
-    }else{
-      toast.error("Title Shouldn't be empty")
     }
   };
   return (
