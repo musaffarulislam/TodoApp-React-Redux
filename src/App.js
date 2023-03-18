@@ -17,6 +17,7 @@ function App() {
     </div>
     <Toaster toastOptions={{
       style:{
+        position: 'bottom',
         fontSize: '1.4rem'
       }
     }}></Toaster>
